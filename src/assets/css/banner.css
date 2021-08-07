@@ -1,0 +1,45 @@
+.banner-box{
+    position: relative;
+    left: 50%;
+    width: 350px;
+    top: 60px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 6px;
+    transform:translateX(-50%);
+}
+ .banner-list{
+     position: absolute;
+     display: flex;
+    left: 0;
+    width: calc(350px * 4);
+    transition: left .3s;
+    z-index: 0;
+}
+.banner{
+  width: 350px;
+  height: 110px;
+}
+.banner-box img{
+    width: 100%;
+    height: 100%;
+}
+.listIndex{
+   position: absolute;
+   left: 50%;
+   bottom: 3px;
+   display: flex;
+   height: 10px;
+   transform: translateX(-50%);
+}
+.listIndex .index{
+    width: 6px;
+    height: 6px;
+    margin-left: 10px;
+   margin-right: 10px;
+   background: #f3f3f3;
+   border-radius: 50%;
+}
+.listIndex .index.active {
+  background-color: #fb7299;
+}
